@@ -22,7 +22,6 @@ h2 {
   display: grid;
   grid-template-columns: 50px 1fr repeat(4, 2fr);
   grid-template-rows: repeat(4, 200px);
-  gap: 20px;
   grid-template-areas: 
     ". title1 title1 title1 item1 ."
     ". title2 title2 item2 . item3"
@@ -35,6 +34,7 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  padding: 20px;
 }
 
 .title1 {
@@ -46,10 +46,13 @@ img {
 }
 
 .item1 {
+  border-left: 1px solid #000000;
   grid-area: item1;
+  margin-left: -1px;
 }
 
 .item2 {
+  border-right: 1px solid #000000;
   grid-area: item2;
 }
 
@@ -62,7 +65,9 @@ img {
 }
 
 .item5 {
+  border-left: 1px solid #000000;
   grid-area: item5;
+  margin-left: -1px;
 }
 
 .item6 {
@@ -70,19 +75,10 @@ img {
 }
 
 .item7 {
+  border-right: 1px solid #000000;
   grid-area: item7;
 }
 
 .item8 {
   grid-area: item8;
-}
-
-.grid-line-vertical {
-  grid-column: 5;
-  grid-row: 1 / -1;
-  width: 1px;
-  background: #000000;
-  margin-left: -10.5px;
-  margin-top: -18px;
-  height: 896px;
 }
