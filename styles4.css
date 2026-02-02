@@ -5,27 +5,29 @@
 }
 
 body {
-  padding: 53px 20px;
+  padding: 53px 20px 0 0;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 50px;
   font-weight: 100;
-  margin-bottom: 69px;
   letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 49px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 50px 1fr repeat(4, 2fr);
   grid-template-rows: repeat(4, 200px);
   gap: 20px;
   grid-template-areas: 
-    "title1 title1 title1 item1 ."
-    "title2 title2 item2 . item3"
-    ". item4 . item5 ."
-    "item6 . item7 . item8";
+    ". title1 title1 title1 item1 ."
+    ". title2 title2 item2 . item3"
+    ". . item4 . item5 ."
+    "item6 item6 . item7 . item8";
 }
 
 img {
