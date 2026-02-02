@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 53px 20px 0 0;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 49px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 1fr repeat(4, 2fr);
+  grid-template-rows: repeat(4, 200px);
+  grid-template-areas: 
+    ". title1 title1 title1 item1 ."
+    ". title2 title2 item2 . item3"
+    ". . item4 . item5 ."
+    "item6 item6 . item7 . item8";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  padding: 20px;
+}
+
+.title1 {
+  grid-area: title1;
+}
+
+.title2 {
+  grid-area: title2;
+}
+
+.item1 {
+  border-left: 1px solid #000000;
+  grid-area: item1;
+  margin-left: -1px;
+}
+
+.item2 {
+  border-right: 1px solid #000000;
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  border-left: 1px solid #000000;
+  grid-area: item5;
+  margin-left: -1px;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item7 {
+  border-right: 1px solid #000000;
+  grid-area: item7;
+}
+
+.item8 {
+  grid-area: item8;
+}
