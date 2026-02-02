@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 209px 120px 0 120px;
+  padding: 103px 120px 0 120px;
 }
 
 h1 {
@@ -32,4 +32,15 @@ img {
 .item1 {
   overflow: hidden;
   grid-column: 1 / 3;
+}
+
+.item5 {
+  overflow: hidden;
+  grid-row: 2 / 4;
+  grid-column-start: 2;
+}
+
+.item6 {
+  overflow: hidden;
+  grid-column: 3 / 5;
 }
